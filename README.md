@@ -78,6 +78,7 @@ Using PySpark API.
 * [Mean Squared Error vs. Mean Absolute Error](#mean-squared-error-vs.-mean-absolute-error)
 * [L1 vs L2 regularization](#l1-vs-l2-regularization)
 * [Correlation vs Covariance](#correlation-vs-covariance)
+* [Hard Voting vs Soft Voting](#hard-voting-vs-soft-voting)
 * [Would adding more data address underfitting](#would-adding-more-data-address-underfitting)
 * [Activation Function](#activation-function)
 * [Bagging](#bagging)
@@ -155,9 +156,17 @@ Cross-validation is a technique to evaluate predictive models by partitioning th
 * Correlation is when the change in one item may result in the change in the another item, while covariance is when two items vary together (joint variability)
 * Covariance is nothing but a measure of correlation. On the contrary, correlation refers to the scaled form of covariance
 * Range: correlation is between -1 and +1, while covariance lies between negative infinity and infinity.
-
+* Covariance:  ![](assets/covariance.png)
+* Correlation:  ![](assets/correlation.png)
 
 [back to top](#data-science-question-answer)
+
+###Hard Voting vs Soft Voting
+
+- Hard Voting Classifier：Determine the final result according to the major prediction class claimed by all models
+- Soft Voting Classifier：Taking the average probability of all model prediction, the prediction class with the highest probability is the final prediction result.
+
+[back to top](#hard-voting-vs-soft-voting)
 
 
 ### Would adding more data address underfitting
@@ -205,6 +214,10 @@ Here is a [great illustration](http://scikit-learn.org/stable/auto_examples/ense
 * We can train multiple models in the second layer, but this entails subsetting the original dataset into 3 parts
 
 ![stacking](assets/stacking.jpg)
+
+- Example: A、B are learners，C、D、E are higher layer learners. Higher layer learners will refer to lower layer's answer
+
+  ![stacking_example](assets/stacking_example.png)
 
 [back to top](#data-science-question-answer)
 
