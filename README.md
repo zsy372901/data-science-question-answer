@@ -166,7 +166,7 @@ Cross-validation is a technique to evaluate predictive models by partitioning th
 - Hard Voting Classifier：Determine the final result according to the major prediction class claimed by all models
 - Soft Voting Classifier：Taking the average probability of all model prediction, the prediction class with the highest probability is the final prediction result.
 
-[back to top](#hard-voting-vs-soft-voting)
+[back to top](#data-science-question-answer)
 
 
 ### Would adding more data address underfitting
